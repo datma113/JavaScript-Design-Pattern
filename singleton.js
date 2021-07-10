@@ -32,7 +32,6 @@ let Singleton = function () {
      }
 }()
 
-
 let mySingleton = Singleton.getInstance()
 
 mySingleton.testArrowFunc()
@@ -42,6 +41,7 @@ mySingleton.increaseNumber()
 mySingleton.showProperty()
 mySingleton.increaseNumber()
 mySingleton.showProperty()
+
 
 
 
