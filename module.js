@@ -6,6 +6,7 @@ var nameModule = function() {
      const privateMethod = function() {
           console.log(`private method...`)
      }
+
      const anotherPrivateMethod = function() {
           console.log(`another private method`)
      }
@@ -23,8 +24,14 @@ var nameModule = function() {
               privateMethod();
               anotherPrivateMethod();
           },
+
           callPrivateVar: function() {
                console.log(` call private var: ${privateVar} ${anotherPrivateVar} `)
+          },
+
+          increase: function() {
+               privateVar++;
+               this.publicVar++;
           }
      }
 }()
@@ -33,4 +40,11 @@ var nameModule = function() {
 nameModule.publicMethod()
 nameModule.callPrivateMethod()
 nameModule.callPrivateVar()
+
+nameModule.increase()
+nameModule.increase()
+
+nameModule.publicMethod()
+nameModule.callPrivateVar()
+
 

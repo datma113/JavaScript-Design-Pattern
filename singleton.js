@@ -37,8 +37,10 @@ let mySingleton = Singleton.getInstance()
 mySingleton.testArrowFunc()
 mySingleton.showProperty()
 mySingleton.diveDeeper()()
+
 mySingleton.increaseNumber()
 mySingleton.showProperty()
+
 mySingleton.increaseNumber()
 mySingleton.showProperty()
 
