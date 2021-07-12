@@ -29,6 +29,10 @@ const Observer1 = function() {
 const Observer2 = function() {
      console.log(`subject has changed: notified observer 2`)
 }
+sub.subscribe(Observer1)
+sub.subscribe(Observer2)
+sub.notifyAllObserver()
+
 /**
  * code example 2
  */
